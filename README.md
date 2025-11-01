@@ -38,7 +38,9 @@ no se ogólnie skompiluj
 go build asfetch.go
 ```
 i wklej do np ```/usr/bin/asf```
-lub jak jesteś pro koks i używasz archa btw, to użyj PKGBUILD
+
+#lub jak jesteś pro koks i używasz archa btw 
+to użyj PKGBUILD
 ```makepkg -si```
 ## Konfiguracja
 Plik konfigu zapisuje się w katalogu użytkownika (domyślnie `~/.config/asf/config.json`).  
