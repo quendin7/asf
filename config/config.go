@@ -10,25 +10,54 @@ import (
 	"sync"
 )
 
+func GetAllEnabledConfig() Config {
+	return Config{
+		EnableUserHost:         true,
+		EnableOSInfo:           true,
+		EnableKernel:           true,
+		EnablePackages:         true,
+		EnableDEWM:             true,
+		EnableCPU:              true,
+		EnableGPU:              true,
+		EnableRAM:              true,
+		EnableSwap:             true,
+		EnableMusic:            true,
+		EnableUptime:           true,
+		EnableGTKTheme:         true,
+		EnableIconTheme:        true,
+		EnableFont:             true,
+		EnableShell:            true,
+		EnableBattery:          true,
+		EnableLogo:             true,
+		EnableDiskInfo:         true,
+		EnableNetworkInfo:      true,
+		EnableScreenResolution: true,
+		LogoPath:               "art.txt",
+	}
+}
+
 type Config struct {
-	EnableUserHost  bool   `json:"enable_user_host"`
-	EnableOSInfo    bool   `json:"enable_os_info"`
-	EnableKernel    bool   `json:"enable_kernel"`
-	EnablePackages  bool   `json:"enable_packages"`
-	EnableDEWM      bool   `json:"enable_de_wm"`
-	EnableCPU       bool   `json:"enable_cpu"`
-	EnableGPU       bool   `json:"enable_gpu"`
-	EnableRAM       bool   `json:"enable_ram"`
-	EnableSwap      bool   `json:"enable_swap"`
-	EnableMusic     bool   `json:"enable_music"`
-	EnableUptime    bool   `json:"enable_uptime"`
-	EnableGTKTheme  bool   `json:"enable_gtk_theme"`
-	EnableIconTheme bool   `json:"enable_icon_theme"`
-	EnableFont      bool   `json:"enable_font"`
-	EnableShell     bool   `json:"enable_shell"`
-	EnableBattery   bool   `json:"enable_battery"`
-	EnableLogo      bool   `json:"enable_logo"`
-	LogoPath        string `json:"logo_path"`
+	EnableUserHost         bool   `json:"enable_user_host"`
+	EnableOSInfo           bool   `json:"enable_os_info"`
+	EnableKernel           bool   `json:"enable_kernel"`
+	EnablePackages         bool   `json:"enable_packages"`
+	EnableDEWM             bool   `json:"enable_de_wm"`
+	EnableCPU              bool   `json:"enable_cpu"`
+	EnableGPU              bool   `json:"enable_gpu"`
+	EnableRAM              bool   `json:"enable_ram"`
+	EnableSwap             bool   `json:"enable_swap"`
+	EnableMusic            bool   `json:"enable_music"`
+	EnableUptime           bool   `json:"enable_uptime"`
+	EnableGTKTheme         bool   `json:"enable_gtk_theme"`
+	EnableIconTheme        bool   `json:"enable_icon_theme"`
+	EnableFont             bool   `json:"enable_font"`
+	EnableShell            bool   `json:"enable_shell"`
+	EnableBattery          bool   `json:"enable_battery"`
+	EnableLogo             bool   `json:"enable_logo"`
+	LogoPath               string `json:"logo_path"`
+	EnableDiskInfo         bool   `json:"enable_disk_info"`
+	EnableNetworkInfo      bool   `json:"enable_network_info"`
+	EnableScreenResolution bool   `json:"enable_screen_resolution"`
 }
 
 var (
@@ -40,24 +69,27 @@ var (
 
 func GetDefaultConfig() Config {
 	return Config{
-		EnableUserHost:  true,
-		EnableOSInfo:    true,
-		EnableKernel:    true,
-		EnablePackages:  true,
-		EnableDEWM:      true,
-		EnableCPU:       true,
-		EnableGPU:       true,
-		EnableRAM:       true,
-		EnableSwap:      true,
-		EnableMusic:     true,
-		EnableUptime:    true,
-		EnableGTKTheme:  false,
-		EnableIconTheme: false,
-		EnableFont:      false,
-		EnableShell:     false,
-		EnableBattery:   false,
-		EnableLogo:      true,
-		LogoPath:        "art.txt",
+		EnableUserHost:         true,
+		EnableOSInfo:           true,
+		EnableKernel:           true,
+		EnablePackages:         true,
+		EnableDEWM:             true,
+		EnableCPU:              true,
+		EnableGPU:              true,
+		EnableRAM:              true,
+		EnableSwap:             true,
+		EnableMusic:            true,
+		EnableUptime:           true,
+		EnableGTKTheme:         false,
+		EnableIconTheme:        false,
+		EnableFont:             false,
+		EnableShell:            false,
+		EnableBattery:          false,
+		EnableLogo:             true,
+		EnableDiskInfo:         false,
+		EnableNetworkInfo:      false,
+		EnableScreenResolution: false,
+		LogoPath:               "art.txt",
 	}
 }
 
