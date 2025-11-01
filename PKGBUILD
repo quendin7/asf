@@ -1,5 +1,5 @@
 pkgname=asfetch
-pkgver=2.0
+pkgver=2.1
 pkgrel=1
 pkgdesc="A fast system information fetching tool written in Go, similar to Neofetch."
 arch=('x86_64')

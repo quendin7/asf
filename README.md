@@ -32,7 +32,14 @@ Naprawdę. Uruchom i zobacz.
 - Jeśli włączysz `-L` i `-tts`, program ci powie to co Oli Sykes w 2015.
 - Zrobić coś głupiego? Prawdopodobnie już to zrobi.  
 - Masz bug? Przyjmij go jako nową funkcję i stwórz issue, jeżeli masz ochotę.
-
+## Instalacja
+no se ogólnie skompiluj
+```
+go build asfetch.go
+```
+i wklej do np ```/usr/bin/asf```
+lub jak jesteś pro koks i używasz archa btw, to użyj PKGBUILD
+```makepkg -si```
 ## Konfiguracja
 Plik konfigu zapisuje się w katalogu użytkownika (domyślnie `~/.config/asf/config.json`).  
 Masz flagę `-c`, żeby wymusić użycie domyślnego configu.
