@@ -8,7 +8,7 @@ Naprawdę. Uruchom i zobacz.
 - Hardware: CPU, GPU, RAM, swap, bateria, dyski, sieć.
 - Desktop: DE/WM, motywy GTK/ikon, fonty, rozdzielczość.
 - Dodatki: uptime, muzyka, shell, mały parasol do TTS (tak, parasol).
-- Flagi: włącz wszystko (-a), tylko logo (-L), wyłącz logo (-l), parasol :3 (-tts), JSON (--json), domyślny config (-c) i kilka innych.
+- Flagi: włącz wszystko (-a), tylko logo (-L), wyłącz logo (-l), parasol :3 (-tts),domyślny config (-c) ble ble ble.
 
 ## Przykładowe użycie
 - Normalnie:
@@ -39,8 +39,7 @@ go build asfetch.go
 ```
 i wklej do np ```/usr/bin/asf```
 
-#lub jak jesteś pro koks i używasz archa btw 
-to użyj PKGBUILD
+# lub jak jesteś pro koks i używasz archa btw to użyj PKGBUILD
 ```makepkg -si```
 ## Konfiguracja
 Plik konfigu zapisuje się w katalogu użytkownika (domyślnie `~/.config/asf/config.json`).  
